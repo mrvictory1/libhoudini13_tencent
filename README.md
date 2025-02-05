@@ -1,5 +1,5 @@
 # libhoudini13_tencent
-libhoudini.so + libnb.so extracted from [Tencent's AoW emulator](sj.qq.com). libnb.so library allows libhoudini to function on AMD processors. libhoudini version: `13.0.1_z.Tencent_AoW_Com2.5b RELEASE` Usage instructions for Waydroid:
+libhoudini.so + libnb.so extracted from [Tencent's AoW emulator](sj.qq.com). ~~libnb.so library allows libhoudini to function on AMD processors.~~ This libhoudini bouild boots on AMD even without libnb.so however it is very likely to freeze, it is not fully usable on AMD. libhoudini version: `13.0.1_z.Tencent_AoW_Com2.5b RELEASE` Usage instructions for Waydroid:
 1. Use [worstperson/waydroid_script](https://github.com/worstperson/waydroid_script) to install libhoudini for Android 13, the script will set up the necessary workarounds to use libhoudini.
 2. In `/var/lib/waydroid/waydroid_base.prop` set `ro.dalvik.vm.native.bridge` to `libnb.so`
 3. Copy contents of system/ in this repository to `/var/lib/waydroid/overlay/system` overwriting existing files.
